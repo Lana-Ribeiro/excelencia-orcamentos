@@ -1,0 +1,42 @@
+{
+  "name": "ferramenta-excelencia",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ferramenta de preenchimento de orçamentos com IA, integrada às planilhas Excel.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "tsx server/index.ts",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "npm run build && tsx server/index.ts",
+    "serve": "tsx server/index.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "verificar": "tsx scripts/verificar.ts",
+    "preparar-hf": "tsx scripts/preparar-hf.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "express": "^5.2.1",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^5.4.21"
+  }
+}

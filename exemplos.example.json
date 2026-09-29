@@ -1,0 +1,19 @@
+{
+  "modelo": "Planilha modelo.xlsm",
+  "projetos": [
+    {
+      "arquivo": "ORCAMENTO_EXEMPLO_R00.xlsm",
+      "cliente": "Cliente Exemplo",
+      "local": "Shopping Exemplo · São Paulo",
+      "area": 120
+    }
+  ],
+  "modelosClientes": [
+    {
+      "arquivo": "Planilha padrao do cliente.xlsx",
+      "nome": "Cliente Exemplo — Planilha global de obra civil",
+      "cliente": "Cliente Exemplo",
+      "orcamento": "Cliente Exemplo — Loja Centro"
+    }
+  ]
+}

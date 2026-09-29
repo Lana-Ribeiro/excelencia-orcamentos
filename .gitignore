@@ -1,0 +1,27 @@
+# dependências e builds
+node_modules/
+dist/
+hf-space/
+
+# dados e planilhas reais (clientes, preços, orçamentos) — nunca versionar
+data/
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+.~lock.*
+~$*
+exemplos.local.json
+
+# segredos
+.env
+.env.*
+!.env.example
+SENHA-HUGGINGFACE.txt
+*.enc
+
+# ferramentas locais
+.claude/
+*.log
+.DS_Store
+Thumbs.db
